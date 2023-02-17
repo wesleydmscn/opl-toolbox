@@ -45,3 +45,6 @@ After running this command, the script should be able to identify whether there 
 This project is constantly being updated, so that you stay on top of all the new features available in this script, you can follow the [**Project's Wiki**](https://github.com/wesleydmscn/conf_apps-opl/wiki), there you will find more complete documentation about the project.
 
 ## Contribution
+If you're interested in contributing to conf_apps-opl, please read our [**Contributing Docs**](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CONTRIBUTING.md) **before submitting a pull request**.
+
+You can also use the [**GitHub Discussions**](https://github.com/wesleydmscn/conf_apps-opl/discussions) section to discuss a topic or ask questions. It is recommended to read the [**Code of Conduct**](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CODE_OF_CONDUCT.md) so that you do not say anything inappropriate.
