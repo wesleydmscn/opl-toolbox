@@ -42,5 +42,6 @@ After downloading, extract the `**.zip**` file (do not extract into a separate f
 After running this command, the script should be able to identify whether there is an **APPS/** folder and whether there are files with the `**.elf**` extension inside it to create the `**.cfg**` file.
 
 ## Docs
+This project is constantly being updated, so that you stay on top of all the new features available in this script, you can follow the [**Project's Wiki**](https://github.com/wesleydmscn/conf_apps-opl/wiki), there you will find more complete documentation about the project.
 
 ## Contribution
