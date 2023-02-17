@@ -10,6 +10,11 @@
 </div>
 
 ## Project
+**conf_apps-opl** is a 100% open source scripting tool for the **PS2** unit for the purpose of automating application listing. There are already some options to do this, but most are limited to working only in Windows. It is being developed in the Python language and the premise is that it is **cross-platform**, hence the choice of this language. In this first release, functionality is limited to just **.elf** apps in the **APPS/** folder, support for automating PS1 game listing will be added in the future.
+
+<div align="center">
+  <img width="60%" src=".github/screenshot.png">
+</div>
 
 ## Installation
 
