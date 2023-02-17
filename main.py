@@ -1,7 +1,7 @@
 import os
 import time
 
-print('''
+print('''\033[96m
 
  __ _     __    _  _  _  __
 /  / \|\||_    |_||_)|_)(_ 
@@ -10,7 +10,7 @@ print('''
 /__|_ |\||_ |_)|_| | / \|_)
 \_||__| ||__| \| | | \_/| \ 
 
-''')
+\033[00m''')
 
 ROOT_DIR = 'APPS/'
 CONF_FILE = 'conf_apps.cfg'
@@ -32,7 +32,8 @@ def find_elf_files():
         return
 
     print(60 * '-')
-    print(f'The following .elf were found:\n {elf_files}')
+    print('The following .elf were found:')
+    print(f'\033[96m{elf_files}\033[00m')
     print(60 * '-')
 
     create_conf_apps(elf_files)
@@ -52,7 +53,7 @@ def create_conf_apps(elf_list):
                 cfg.write(f'{path[0]}=mass:/{ROOT_DIR}{path[1]}\n')
 
             print(60 * '-')
-            print(f'\n{CONF_FILE} was created\n')
+            print(f'\033[92m\n{CONF_FILE} was created\033[00m\n')
             print(60 * '-')
 
     except Exception as e:
