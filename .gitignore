@@ -1,2 +1,5 @@
 APPS/
+POPS/
 conf_apps.cfg
+
+__pycache__
