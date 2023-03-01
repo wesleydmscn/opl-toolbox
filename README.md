@@ -1,50 +1,52 @@
 <div align="center">
-  <img width="64%" height="80" src="./.github/logotipo.svg">
+  <img width="60%" height="80" src="./.github/logotipo.svg">
   <p align="center">Configuration file generator conf_apps for Playstation 2 OPL.</p>
   <p align="center">
-    <a href="#project">Project</a> · 
+    <a href="#about">About</a> · 
     <a href="#installation">Installation</a> · 
-    <a href="#docs">Docs</a> · 
-    <a href="#contribution">Contribution</a>
+    <a href="#usage">Usage</a> · 
+    <a href="#contributing">Contributing</a> ·
+    <a href="#license">License</a>
   </p>
 </div>
 
-## Project
-**conf_apps-opl** is a 100% open source scripting tool for the **PS2** unit for the purpose of automating application listing. There are already some options to do this, but most are limited to working only in Windows. It is being developed in the Python language and the premise is that it is **cross-platform**, hence the choice of this language. In this first release, functionality is limited to just **.elf** apps in the **APPS/** folder, support for automating PS1 game listing will be added in the future.
+### About
+**conf_apps-opl** is a Python-based scripting tool designed to automate the listing of apps for the Playstation 2 OPL. This open source project aims to provide a cross-platform solution for creating **.cfg** files that list **.elf** applications in the **APPS/** folder. Currently, the tool already supports the listing of PS1 games, but this feature is still in **beta** and may present bugs.
 
 <div align="center">
   <img width="60%" src=".github/screenshot.png">
 </div>
 
-## Installation
-In order for you to be able to use this script successfully, you need to have **python installed** on your machine. Just below is the download link on the website according to your system:
+### Installation
+Before using this script, you must have Python installed on your machine. You can download the latest version of Python [here](https://www.python.org/downloads/).
 
-> [**Download the latest version of Python**](https://www.python.org/downloads/)
+To download the latest version of the **conf_apps-opl** script, go to the [releases page](https://github.com/wesleydmscn/conf_apps-opl/releases) and extract the **.zip** file to a folder containing your **APPS/** folder and **.elf** apps.
 
-Right after installing python on your machine, just download the latest version of the script here in this repository, or click on [this link](https://github.com/wesleydmscn/conf_apps-opl/releases) to go straight to the github releases page.
+Once you have extracted the file, follow these commands in your terminal:
 
-After downloading, extract the `**.zip**` file (do not extract into a separate folder) into a folder containing the **APPS/** folder with your `**.elf**` to list and make sure if if the files are in the same **APPS/** folder, if yes then follow the commands:
+```bash
+cd conf_apps-opl
+python main.py
+```
 
-> **Note**
-> Linux Users:<br>
-  Open the folder where the extracted file is located in your terminal and run the following command to create **conf_apps.cfg**:
-  ```bash
-  $ python main.py
-  ```
+This will create the **conf_apps.cfg** file in the same folder.
 
-> **Note**
-> Windows Users:<br>
-  Open the folder where the extracted file is located in your cmd or powershell and run the following command to create **conf_apps.cfg**:
-  ```bash
-  $ python main.py
-  ```
+### Usage
+For more detailed documentation on how to use the tool, check out the [project's Wiki](https://github.com/wesleydmscn/conf_apps-opl/wiki). The Wiki provides an overview of all the features and instructions on how to use them.
 
-After running this command, the script should be able to identify whether there is an **APPS/** folder and whether there are files with the `**.elf**` extension inside it to create the `**.cfg**` file.
+#### Quick usage tutorials:
 
-## Docs
-This project is constantly being updated, so that you stay on top of all the new features available in this script, you can follow the [**Project's Wiki**](https://github.com/wesleydmscn/conf_apps-opl/wiki), there you will find more complete documentation about the project.
+- OPL APPS:
+  To use the tool to list only OPL Apps, make sure you have the **APPS/** folder in the same directory as the tool and inside it files with the **.ELF** extension.
 
-## Contribution
-If you're interested in contributing to conf_apps-opl, please read our [**Contributing Docs**](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CONTRIBUTING.md) **before submitting a pull request**.
+- OPL POPS:
+  To use the tool to list only POPS(PS1) games, make sure you have the **POPS/** folder in the same directory as the tool and inside it the **POPSTARTER.ELF** file and game files with the **.VCD** extension.
 
-You can also use the [**GitHub Discussions**](https://github.com/wesleydmscn/conf_apps-opl/discussions) section to discuss a topic or ask questions. It is recommended to read the [**Code of Conduct**](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CODE_OF_CONDUCT.md) so that you do not say anything inappropriate.
+> **Warning**
+> An important tip about the tool is that **conf_apps.cfg** accumulates data, that is, be sure to add your application or PS1 game only once, if you want to redo the process from the beginning, delete the generated file **conf_apps.cfg** and run the **script**.
+
+### Contributing
+If you are interested in contributing to **conf_apps-opl**, please read our [Contribution Guidelines](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CONTRIBUTING.md) before submitting a pull request. You can also use the [GitHub Discussions](https://github.com/wesleydmscn/conf_apps-opl/discussions) section to discuss a topic or ask questions. It is recommended to read the [Code of Conduct](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CODE_OF_CONDUCT.md) before contributing.
+
+### License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
