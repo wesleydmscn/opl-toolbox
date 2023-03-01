@@ -1,20 +1,12 @@
-import os
-import time
+import sys
 
-print('''\033[96m
+sys.path.insert(0, 'modules/prompts')
+sys.path.insert(0, 'modules/file_management')
+sys.path.insert(0, 'modules/create_conf_cfg')
 
- __ _     __    _  _  _  __
-/  / \|\||_    |_||_)|_)(_ 
-\__\_/| ||  ___| ||  |  __)
- __ __    __ _  _ ___ _  _ 
-/__|_ |\||_ |_)|_| | / \|_)
-\_||__| ||__| \| | | \_/| \ 
-
-\033[00m''')
-
-ROOT_DIR = 'APPS/'
-CONF_FILE = 'conf_apps.cfg'
-
+from conf_options import conf_options
+from find_files_by_type import find_files_by_type
+from create_conf_cfg import create_conf_cfg
 
 def init_script():
     if os.path.isdir(ROOT_DIR):
