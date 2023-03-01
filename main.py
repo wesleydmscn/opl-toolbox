@@ -13,42 +13,12 @@ def init_script():
 
     if not conf_options_selected:
         return
+    
+    files = find_files_by_type(conf_options_selected[0], conf_options_selected[1])
 
-def find_elf_files():
-    files = os.listdir(ROOT_DIR)
-    elf_files = [f for f in files if f.endswith('.ELF')]
-
-    if not elf_files:
-        print('.elf files not found.')
+    if files == FileNotFoundError:
         return
-
-    print(60 * '-')
-    print('The following .elf were found:')
-    print(f'\033[96m{elf_files}\033[00m')
-    print(60 * '-')
-
-    create_conf_apps(elf_files)
-
-
-def create_conf_apps(elf_list):
-    time.sleep(1)
-    user_inputs = []
-
-    for elf in elf_list:
-        user_input = str(input(f'Name for this elf file ({elf}): '))
-        user_inputs.append([user_input, elf])
-
-    try:
-        with open(CONF_FILE, 'w') as cfg:
-            for path in user_inputs:
-                cfg.write(f'{path[0]}=mass:/{ROOT_DIR}{path[1]}\n')
-
-            print(60 * '-')
-            print(f'\033[92m\n{CONF_FILE} was created\033[00m\n')
-            print(60 * '-')
-
-    except Exception as e:
-        print(f'An error occured while writing the file: {e}')
-
+    
+    create_conf_cfg(files[0], files[1], conf_options_selected[1])
 
 init_script()
