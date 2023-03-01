@@ -9,11 +9,10 @@ from find_files_by_type import find_files_by_type
 from create_conf_cfg import create_conf_cfg
 
 def init_script():
-    if os.path.isdir(ROOT_DIR):
-        find_elf_files()
-    else:
-        print('APPS/ folder not found.')
+    conf_options_selected = conf_options()
 
+    if not conf_options_selected:
+        return
 
 def find_elf_files():
     files = os.listdir(ROOT_DIR)
