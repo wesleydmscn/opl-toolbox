@@ -6,12 +6,12 @@
     <a href="#installation">Installation</a> · 
     <a href="#usage">Usage</a> · 
     <a href="#contributing">Contributing</a> ·
-    <a href="#license">License</a>
+    <a href="./LICENSE">License</a>
   </p>
 </div>
 
 ### About
-**conf_apps-opl** is a Python-based scripting tool designed to automate the listing of apps for the Playstation 2 OPL. This open source project aims to provide a cross-platform solution for creating **.cfg** files that list **.elf** applications in the **APPS/** folder. Currently, the tool already supports the listing of PS1 games, but this feature is still in **beta** and may present bugs.
+**conf_apps_opl** is a Python-based scripting tool designed to automate the listing of apps for the Playstation 2 OPL. This open source project aims to provide a cross-platform solution for creating **.cfg** files that list **.elf** applications in the **APPS/** folder. Currently, the tool already supports the listing of PS1 games, but this feature is still in **beta** and may present bugs.
 
 <div align="center">
   <img width="60%" src=".github/screenshot.png">
@@ -20,7 +20,7 @@
 ### Installation
 Before using this script, you must have Python installed on your machine. You can download the latest version of Python [here](https://www.python.org/downloads/).
 
-To download the latest version of the **conf_apps-opl** script, go to the [releases page](https://github.com/wesleydmscn/conf_apps-opl/releases) and extract the **.zip** file to a folder containing your **APPS/** folder and **.elf** apps.
+To download the latest version of the **conf_apps_opl** script, go to the [releases page](https://github.com/wesleydmscn/conf_apps-opl/releases) and extract the **.zip** file to a folder containing your **APPS/** folder and **.elf** apps.
 
 Once you have extracted the file, follow these commands in your terminal:
 
@@ -46,7 +46,4 @@ For more detailed documentation on how to use the tool, check out the [project's
 > An important tip about the tool is that **conf_apps.cfg** accumulates data, that is, be sure to add your application or PS1 game only once, if you want to redo the process from the beginning, delete the generated file **conf_apps.cfg** and run the **script**.
 
 ### Contributing
-If you are interested in contributing to **conf_apps-opl**, please read our [Contribution Guidelines](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CONTRIBUTING.md) before submitting a pull request. You can also use the [GitHub Discussions](https://github.com/wesleydmscn/conf_apps-opl/discussions) section to discuss a topic or ask questions. It is recommended to read the [Code of Conduct](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CODE_OF_CONDUCT.md) before contributing.
-
-### License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+If you are interested in contributing to **conf_apps_opl**, please read our [Contribution Guidelines](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CONTRIBUTING.md) before submitting a pull request. You can also use the [GitHub Discussions](https://github.com/wesleydmscn/conf_apps-opl/discussions) section to discuss a topic or ask questions. It is recommended to read the [Code of Conduct](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CODE_OF_CONDUCT.md) before contributing.
