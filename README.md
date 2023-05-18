@@ -1,65 +1,51 @@
 <div align="center">
   <img width="60%" height="80" src="./.github/logotipo.svg">
-  <p align="center">Linux command line tool for Playstation 2 OPL.</p>
+  <p align="center">Linux command line tool for Playstation 2 OPL</p>
   <p align="center">
     <a href="#about">About</a> · 
     <a href="#installation">Installation</a> · 
     <a href="#usage">Usage</a> · 
-    <a href="#contributing">Contributing</a> ·
-    <a href="./LICENSE">License</a>
+    <a href="#contributing">Contributing</a>
   </p>
 </div>
 
-### About
-**OPL Helper for Linux** is a command line tool created to simplify the use of Open PS2 Loader (OPL)
-on PlayStation 2. With this tool, you can easily perform common tasks such as installing games
-on PS2 HD or Pendrive, editing files from OPL configuration and installation of Playstation 1 games
-and applications.
+## About
+**OPL Helper for Linux** is a command line tool created to simplify the use of the **Open PS2 Loader (OPL)**
+on PlayStation 2 in Linux environment. With this tool, you can easily perform common tasks like converting .bin to .VCD,
+listing Playstation 1 games and Homebrew Apps.
 
-Is an open source project, written in Python, and is free to use and distribute.
-Anyone is welcome to contribute to the project, whether it's reporting issues, submitting pull requests,
-or improving the documentation.
-
-We hope that **OPL Helper for Linux** can be useful for PS2 players who want to use OPL in a more efficient
-and simplified way.
+It is an open source project, written in Python, and is free to use and distribute.
+Anyone is welcome to contribute to the project, be it reporting issues, submitting pull requests,
+or improve the documentation. I hope **OPL Helper for Linux** can be a useful tool for PS2 players using Linux environment.
 
 <div align="center">
   <img width="60%" src=".github/screenshot.png">
 </div>
 
-### Installation
+## Installation
 Before using this script, you must have Python installed on your machine. You can download the latest version of Python [here](https://www.python.org/downloads/).
 
-To download the latest version of the **OPL Helper for Linux** script, go to the [releases page](https://github.com/wesleydmscn/conf_apps-opl/releases)
-and extract the **.zip** file to a folder containing your **APPS/** folder and **.elf** apps.
-
-Once you have extracted the file, follow these commands in your terminal:
+To download the latest version of the **OPL Helper for Linux** script, go to the 
+[releases page](https://github.com/wesleydmscn/opl-helper-for-linux/releases)
+and extract the **.zip** file to a location of your choice. After extracting the file, 
+open a terminal in that folder and follow these commands in your terminal:
 
 ```bash
 python main.py
 ```
 
-This will create the **conf_apps.cfg** file in the same folder.
+## Usage
+For more detailed documentation on how to get the most out of the tool and an overview of all features and instructions on how to use it,
+check out the Project [Wiki](https://github.com/wesleydmscn/opl-helper-for-linux/wiki).
 
-### Usage
-For more detailed documentation on how to use the tool,
-check out the [project's Wiki](https://github.com/wesleydmscn/conf_apps-opl/wiki).
-The Wiki provides an overview of all the features and instructions on how to use them.
-
-#### Quick usage tutorials:
-
-- OPL APPS:
-  To use the tool to list only OPL Apps, make sure you have the **APPS/** folder in the same directory as the tool and inside it files with the **.ELF** extension.
-
-- OPL POPS:
-  To use the tool to list only POPS(PS1) games, make sure you have the **POPS/** folder in the same directory as the tool and inside it the **POPSTARTER.ELF** file and game files with the **.VCD** extension.
+### Quick usage tutorials:
 
 > **Warning**
-> An important tip about the tool is that **conf_apps.cfg** accumulates data, that is, be sure to add your application or PS1 game only once, if you want to redo the process from the beginning, delete the generated file **conf_apps.cfg** and run the **script**.
+> This section is still being worked on, it may undergo many changes.
 
-### Contributing
-If you are interested in contributing to **OPL Helper for Linux**,
-please read our [Contribution Guidelines](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CONTRIBUTING.md)
-before submitting a pull request. You can also use the [GitHub Discussions](https://github.com/wesleydmscn/conf_apps-opl/discussions)
-section to discuss a topic or ask questions. It is recommended to read the [Code of Conduct](https://github.com/wesleydmscn/conf_apps-opl/blob/main/.github/CODE_OF_CONDUCT.md)
-before contributing.
+## Contributing
+If you are interested in contributing to the **OPL Helper for Linux** tool,
+read our [Contribution Guidelines](https://github.com/wesleydmscn/opl-helper-for-linux/blob/main/.github/CONTRIBUTING.md)
+before submitting a pull request. You can also use the [GitHub Discussions](https://github.com/wesleydmscn/opl-helper-for-linux/discussions)
+section to discuss a topic or ask questions. It is recommended to read the 
+[Code of Conduct](https://github.com/wesleydmscn/opl-helper-for-linux/blob/main/.github/CODE_OF_CONDUCT.md) before contributing.
