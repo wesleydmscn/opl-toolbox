@@ -1,0 +1,6 @@
+data/org.gnome.oplhelper.desktop.in
+data/org.gnome.oplhelper.appdata.xml.in
+data/org.gnome.oplhelper.gschema.xml
+src/main.py
+src/window.py
+src/window.ui
