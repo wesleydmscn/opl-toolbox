@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=oplhelper
+Exec=oplhelper
+Icon=org.gnome.oplhelper
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

@@ -1,5 +1,11 @@
-APPS/
-POPS/
-conf_apps.cfg
+build
+.flatpak-builder
+*.swp
+*~
 
 __pycache__
+
+conf_apps.cfg
+
+APPS/
+POPS/
