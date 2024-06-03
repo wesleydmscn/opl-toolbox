@@ -1,1 +1,1 @@
-i18n.gettext('oplhelper', preset: 'glib')
+i18n.gettext('opl-toolbox', preset: 'glib')

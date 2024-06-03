@@ -1,9 +1,13 @@
 {
-    "app-id" : "org.gnome.oplhelper",
+    "id" : "org.wesleydmscn.opltoolbox",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "master",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
-    "command" : "oplhelper",
+    "sdk-extensions" : [
+        "org.freedesktop.Sdk.Extension.node18",
+        "org.freedesktop.Sdk.Extension.typescript"
+    ],
+    "command" : "org.wesleydmscn.opltoolbox",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -11,6 +15,9 @@
         "--device=dri",
         "--socket=wayland"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/typescript/bin:/usr/lib/sdk/node18/bin"
+    },
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
@@ -24,13 +31,13 @@
     ],
     "modules" : [
         {
-            "name" : "oplhelper",
+            "name" : "opl-toolbox",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/wesleydmscn/opl-helper-for-linux"
+                    "url" : "file:///home/wesley/www/github"
                 }
             ]
         }

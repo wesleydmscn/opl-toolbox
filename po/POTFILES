@@ -1,6 +1,6 @@
-data/org.gnome.oplhelper.desktop.in
-data/org.gnome.oplhelper.appdata.xml.in
-data/org.gnome.oplhelper.gschema.xml
-src/main.py
-src/window.py
+data/org.wesleydmscn.opltoolbox.desktop.in
+data/org.wesleydmscn.opltoolbox.metainfo.xml.in
+data/org.wesleydmscn.opltoolbox.gschema.xml
+src/main.js
+src/window.js
 src/window.ui

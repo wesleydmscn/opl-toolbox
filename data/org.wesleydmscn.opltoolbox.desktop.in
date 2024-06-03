@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=oplhelper
-Exec=oplhelper
-Icon=org.gnome.oplhelper
+Name=opl-toolbox
+Exec=org.wesleydmscn.opltoolbox
+Icon=org.wesleydmscn.opltoolbox
 Terminal=false
 Type=Application
 Categories=GTK;

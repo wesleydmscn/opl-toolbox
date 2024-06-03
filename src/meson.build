@@ -1,35 +1,33 @@
-pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'oplhelper')
+pkgdatadir = get_option('datadir') / meson.project_name()
 gnome = import('gnome')
 
-gnome.compile_resources('oplhelper',
-  'oplhelper.gresource.xml',
+src_res = gnome.compile_resources('org.wesleydmscn.opltoolbox.src',
+  'org.wesleydmscn.opltoolbox.src.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
 )
 
-python = import('python')
-
-conf = configuration_data()
-conf.set('PYTHON', python.find_installation('python3').path())
-conf.set('VERSION', meson.project_version())
-conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
-conf.set('pkgdatadir', pkgdatadir)
-
-configure_file(
-  input: 'oplhelper.in',
-  output: 'oplhelper',
-  configuration: conf,
+data_res = gnome.compile_resources('org.wesleydmscn.opltoolbox.data',
+  'org.wesleydmscn.opltoolbox.data.gresource.xml',
+  gresource_bundle: true,
   install: true,
-  install_dir: get_option('bindir'),
-  install_mode: 'r-xr--r--'
+  install_dir: pkgdatadir,
 )
 
-oplhelper_sources = [
-  '__init__.py',
-  'main.py',
-  'window.py',
-]
+bin_conf = configuration_data()
+bin_conf.set('GJS', find_program('gjs').full_path())
+bin_conf.set('PACKAGE_VERSION', meson.project_version())
+bin_conf.set('PACKAGE_NAME', meson.project_name())
+bin_conf.set('prefix', get_option('prefix'))
+bin_conf.set('libdir', get_option('prefix') / get_option('libdir'))
+bin_conf.set('datadir', get_option('prefix') / get_option('datadir'))
+bin_conf.set('resource_path', '/org/wesleydmscn/opltoolbox')
 
-install_data(oplhelper_sources, install_dir: moduledir)
+configure_file(
+  input: 'org.wesleydmscn.opltoolbox.in',
+  output: 'org.wesleydmscn.opltoolbox',
+  configuration: bin_conf,
+  install: true,
+  install_dir: get_option('bindir')
+)
